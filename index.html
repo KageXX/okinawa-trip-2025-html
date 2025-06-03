@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沖繩親子旅行行程規劃書 - 完整版</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft JhengHei', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .day-card {
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .day-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .day-header {
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            color: white;
+            padding: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .day-content {
+            padding: 25px;
+        }
+
+        .activity {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 4px solid #4ECDC4;
+            background: #f8f9fa;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .activity h3 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .activity h3::before {
+            content: "🕐";
+            margin-right: 8px;
+        }
+
+        .activity p {
+            margin-bottom: 8px;
+        }
+
+        .tips {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .tips h4 {
+            color: #856404;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .tips h4::before {
+            content: "💡";
+            margin-right: 8px;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .food-rec {
+            background: #e8f5e8;
+            border-left: 4px solid #27ae60;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .food-rec::before {
+            content: "🍽️ ";
+        }
+
+        .transport {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .transport::before {
+            content: "🚗 ";
+        }
+
+        .budget-summary {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .budget-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .total {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #e74c3c;
+            border-top: 2px solid #e74c3c;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+
+        /* 手機優化樣式 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+                margin-bottom: 8px;
+            }
+
+            .header p {
+                font-size: 1em;
+            }
+
+            .day-card {
+                margin-bottom: 20px;
+                border-radius: 10px;
+            }
+
+            .day-header {
+                padding: 15px;
+                font-size: 1.2em;
+            }
+
+            .day-content {
+                padding: 15px;
+            }
+
+            .activity {
+                margin-bottom: 15px;
+                padding: 12px;
+            }
+
+            .activity h3 {
+                font-size: 1em;
+                line-height: 1.4;
+            }
+
+            .activity p {
+                font-size: 0.9em;
+                line-height: 1.5;
+            }
+
+            .tips, .food-rec, .transport {
+                padding: 12px;
+                font-size: 0.9em;
+            }
+
+            .budget-summary {
+                padding: 15px;
+            }
+
+            .budget-item {
+                padding: 8px 0;
+                font-size: 0.9em;
+            }
+        }
+
+        /* 新增樣式 */
+        .quick-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .nav-item {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: transform 0.2s ease;
+        }
+
+        .nav-item:hover {
+            transform: translateY(-2px);
+            color: white;
+        }
+
+        .overview-card {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .info-item {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #4ECDC4;
+        }
+
+        .emergency-contact {
+            background: #ffebee;
+            border: 2px solid #f44336;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .emergency-contact h3 {
+            color: #d32f2f;
+            margin-bottom: 15px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .contact-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #f44336;
+        }
+
+        .weather-alert {
+            background: #fff3e0;
+            border: 2px solid #ff9800;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .weather-alert h4 {
+            color: #f57c00;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+
+            .nav-item {
+                padding: 8px;
+                font-size: 0.8em;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .quick-nav, .overview-card {
+                padding: 15px;
+            }
+        }
+
+        /* 新增優化樣式 */
+        .location-info {
+            background: #f0f8ff;
+            border-left: 4px solid #1e90ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 0 8px 8px 0;
+            position: relative;
+        }
+
+        .location-info::before {
+            content: "📍 ";
+            font-size: 1.2em;
+        }
+
+        .map-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #4285f4, #34a853);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9em;
+            margin: 5px 5px 5px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .map-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            color: white;
+        }
+
+        .map-link::before {
+            content: "🗺️ ";
+            margin-right: 5px;
+        }
+
+        .route-link {
+            background: linear-gradient(45deg, #ff6b6b, #ffa726);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9em;
+            margin: 5px 5px 5px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            display: inline-block;
+        }
+
+        .route-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            color: white;
+        }
+
+        .route-link::before {
+            content: "🚗 ";
+            margin-right: 5px;
+        }
+
+        .attraction-detail {
+            background: #fff9e6;
+            border: 1px solid #ffd700;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .attraction-detail h4 {
+            color: #b8860b;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .attraction-detail h4::before {
+            content: "🎯 ";
+            margin-right: 8px;
+        }
+
+        .time-badge {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .cost-info {
+            background: #e8f5e8;
+            border: 1px solid #4caf50;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px 0;
+            display: inline-block;
+        }
+
+        .cost-info::before {
+            content: "💰 ";
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .duration-info {
+            background: #fff3e0;
+            border: 1px solid #ff9800;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px 0;
+            display: inline-block;
+        }
+
+        .duration-info::before {
+            content: "⏰ ";
+            color: #ff9800;
+            font-weight: bold;
+        }
+
+        .sticky-nav {
+            position: sticky;
+            top: 10px;
+            z-index: 100;
+            margin-bottom: 20px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+            color: white;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .highlight-box h4 {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 768px) {
+            .map-link, .route-link {
+                padding: 6px 12px;
+                font-size: 0.8em;
+                margin: 3px 3px 3px 0;
+            }
+
+            .back-to-top {
+                width: 45px;
+                height: 45px;
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .attraction-detail, .location-info {
+                padding: 12px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏝️ 沖繩親子旅行行程規劃書</h1>
+            <p>完整版 | 適合親子的完美行程規劃</p>
+        </div>
+
+        <!-- 快速導覽 -->
+        <div class="quick-nav sticky-nav">
+            <h2 style="text-align: center; color: #2c3e50; margin-bottom: 15px;">📋 快速導覽</h2>
+            <div class="nav-grid">
+                <a href="#overview" class="nav-item">行程總覽</a>
+                <a href="#day1" class="nav-item">第一天</a>
+                <a href="#day2" class="nav-item">第二天</a>
+                <a href="#day3" class="nav-item">第三天</a>
+                <a href="#day4" class="nav-item">第四天</a>
+                <a href="#day5" class="nav-item">第五天</a>
+                <a href="#day6" class="nav-item">第六天</a>
+                <a href="#food" class="nav-item">美食推薦</a>
+                <a href="#shopping" class="nav-item">購物清單</a>
+                <a href="#budget" class="nav-item">預算規劃</a>
+                <a href="#tips" class="nav-item">實用資訊</a>
+                <a href="#emergency" class="nav-item">緊急聯絡</a>
+            </div>
+        </div>
+
+        <!-- 行程總覽 -->
+        <div id="overview" class="overview-card">
+            <h2 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">✈️ 行程總覽</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3 style="color: #e74c3c; margin-bottom: 10px;">📅 旅行時間</h3>
+                    <p><strong>建議時間：</strong>6天5夜</p>
+                    <p><strong>最佳季節：</strong>4-6月、9-11月</p>
+                    <p><strong>避開：</strong>7-8月（颱風季）</p>
+                </div>
+                <div class="info-item">
+                    <h3 style="color: #3498db; margin-bottom: 10px;">👨‍👩‍👧‍👦 旅遊成員</h3>
+                    <p><strong>適合：</strong>親子家庭</p>
+                    <p><strong>年齡：</strong>全年齡適用</p>
+                    <p><strong>特色：</strong>親子友善設施完善</p>
+                </div>
+                <div class="info-item">
+                    <h3 style="color: #27ae60; margin-bottom: 10px;">🚗 交通方式</h3>
+                    <p><strong>租車：</strong>前4天自駕（推薦）</p>
+                    <p><strong>單軌電車：</strong>那霸市區</p>
+                    <p><strong>步行：</strong>國際通周邊</p>
+                </div>
+                <div class="info-item">
+                    <h3 style="color: #f39c12; margin-bottom: 10px;">🏨 住宿建議</h3>
+                    <p><strong>前3晚：</strong>美國村（VESSEL HOTEL）</p>
+                    <p><strong>後2晚：</strong>那霸市區（Hotel Ocean）</p>
+                    <p><strong>特色：</strong>親子友善設施豐富</p>
+                </div>
+            </div>
+
+            <div class="weather-alert">
+                <h4>🌡️ 天氣提醒</h4>
+                <p><strong>夏季（6-8月）：</strong>炎熱潮濕，午後雷陣雨，颱風季節</p>
+                <p><strong>必備：</strong>防曬用品、雨具、防蚊液</p>
+                <p><strong>穿著：</strong>輕便透氣衣物、舒適步行鞋</p>
+            </div>
+        </div>
+
+        <!-- 第一天 -->
+        <div id="day1" class="day-card">
+            <div class="day-header">
+                第一天 - 啟程 → 租車 → 美國村初體驗
+            </div>
+            <div class="day-content">
+                <div class="activity">
+                    <h3>04:00-05:00 - 出發前往機場</h3>
+                    <p><strong>📍 路線：</strong>竹北 → 桃園機場T2</p>
+                    <p><strong>🚗 交通：</strong>自行開車或預約機場接送（車程約45-60分鐘）</p>
+                    <div class="transport">
+                        <strong>極早出發提醒：</strong>為趕上08:00航班，務必準時出發！確認駕駛精神狀況良好
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>05:00-07:30 - 桃園機場報到 & 出境</h3>
+                    <p><strong>📍 地點：</strong>桃園機場第二航廈 中華航空櫃檯</p>
+                    <p><strong>🎯 流程：</strong>辦理登機手續、托運行李、安全檢查、證照查驗</p>
+                    <p><strong>� 小貼士：</strong>可利用自動通關(e-Gate)加快速度，機場內可簡單用餐</p>
+                </div>
+
+                <div class="activity">
+                    <h3>08:00-10:25 - 搭乘華航CI120前往沖繩</h3>
+                    <p><strong>✈️ 航班：</strong>CI120 | 08:00 TPE → 10:25 OKA（當地時間）</p>
+                    <p><strong>⏰ 飛行時間：</strong>約1小時25分鐘</p>
+                    <p><strong>🕐 時差：</strong>沖繩比台灣快1小時（GMT+9）</p>
+                </div>
+
+                <div class="activity">
+                    <h3>10:30-12:00 - 抵達那霸 & OTS租車</h3>
+                    <div class="location-info" data-location="ots-toyosaki">
+                        <strong>OTS臨空豐崎營業所</strong><br>
+                        📍 沖縄県豊見城市豊崎3-37<br>
+                        📞 電話：098-856-8877
+                    </div>
+                    <p><strong>🎯 流程：</strong>入境手續 → OTS接駁巴士 → 辦理租車手續</p>
+                    <p><strong>📋 需備文件：</strong>全員護照、駕照正本、日文譯本、預約確認信、信用卡</p>
+                    <div class="transport">
+                        <strong>取車提醒：</strong>仔細檢查車輛外觀、確認兒童座椅安裝、熟悉操作方式
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>12:15-13:15 - 午餐（豐崎地區）</h3>
+                    <div class="location-info" data-location="iias-toyosaki">
+                        <strong>iias沖繩豐崎購物中心</strong><br>
+                        📍 沖縄県豊見城市豊崎3-35<br>
+                        📞 電話：098-840-6900
+                        <div style="margin-top: 10px;">
+                            <a href="https://www.google.com/maps/dir/OTS臨空豐崎營業所,+沖縄県豊見城市豊崎3-37/iias沖繩豐崎購物中心,+沖縄県豊見城市豊崎3-35" class="route-link" target="_blank">從OTS導航</a>
+                        </div>
+                    </div>
+                    <p><strong>🍽️ 特色：</strong>美食街選擇多樣，有停車場，用餐方便</p>
+                    <div class="duration-info">車程約2-3分鐘</div>
+                </div>
+
+                <div class="activity">
+                    <h3>13:30-15:30 - DMM Kariyushi水族館</h3>
+                    <div class="location-info" data-location="dmm-aquarium">
+                        <strong>DMM Kariyushi水族館</strong><br>
+                        📍 沖縄県豊見城市豊崎3-35（iias購物中心內）<br>
+                        📞 電話：098-840-6333
+                    </div>
+
+                    <div class="attraction-detail">
+                        <h4>景點特色介紹</h4>
+                        <ul>
+                            <li><strong>🌊 新型態水族館：</strong>結合最新光影科技與海洋生物展示</li>
+                            <li><strong>🎨 沉浸式體驗：</strong>360度投影技術，彷彿置身海底世界</li>
+                            <li><strong>🐠 豐富海洋生物：</strong>超過190種、約2,500隻海洋生物</li>
+                            <li><strong>📸 拍照熱點：</strong>夢幻的水母展示區和互動投影區</li>
+                            <li><strong>🌡️ 室內涼爽：</strong>完全空調環境，適合炎熱天氣參觀</li>
+                        </ul>
+                    </div>
+
+                    <div class="cost-info">大人¥2,400，小學生¥1,500，4歲以下免費</div>
+                    <div class="duration-info">建議停留約1.5-2小時</div>
+
+                    <div class="highlight-box">
+                        <h4>👶 親子友善重點</h4>
+                        <p>• 推車友善設計，全館無障礙通道<br>
+                        • 多個互動體驗區，小朋友可以觸摸海星等生物<br>
+                        • 館內有休息區和哺乳室<br>
+                        • 紀念品店有可愛的海洋生物玩偶</p>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>15:30-16:30 - 前往美國村飯店</h3>
+                    <p><strong>🏨 目的地：</strong>VESSEL HOTEL CAMPANA OKINAWA</p>
+                    <p><strong>🚗 車程：</strong>從DMM水族館約40-60分鐘</p>
+                    <p><strong>💡 路線建議：</strong>可選擇高速公路避開市區塞車</p>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/26.15745547,127.65040349/VESSEL+HOTEL+CAMPANA+OKINAWA,+沖縄県中頭郡北谷町美浜9-22" class="route-link" target="_blank">從DMM水族館導航至美國村飯店</a>
+                    </div>
+                    <div class="transport">
+                        <strong>導航設定：</strong>可輸入飯店電話098-936-1188或Map Code 33 525 201*66
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>16:30之後 - 飯店Check-in & 休息</h3>
+                    <p><strong> 飯店特色：</strong>緊鄰美國村、日落海灘，有展望浴場、室內外泳池</p>
+                    <p><strong>👶 親子設施：</strong>豐富兒童備品、親子友善早餐</p>
+                    <p><strong>💆‍♀️ 建議：</strong>稍作休息，熟悉飯店環境</p>
+                </div>
+
+                <div class="activity">
+                    <h3>18:00-19:30 - 美國村晚餐</h3>
+                    <p><strong>📍 地點：</strong>美國村內（從飯店步行即可）</p>
+                    <div class="food-rec">
+                        <strong>推薦餐廳：</strong>グルメ回転寿司市場美浜店（人氣迴轉壽司）或Depot Island區域餐廳
+                    </div>
+                    <div class="food-rec">
+                        <strong>飯後甜點：</strong>Blue Seal冰淇淋北谷店 - 品嚐沖繩特色口味
+                    </div>
+                </div>
+
+                <div class="tips">
+                    <h4>第一天小貼士</h4>
+                    <ul>
+                        <li>第一天凌晨出發較疲累，建議早點回飯店休息</li>
+                        <li>可去飯店展望浴場泡湯放鬆</li>
+                        <li>準備防曬用品，沖繩紫外線很強</li>
+                        <li>隨身攜帶濕紙巾和小毛巾</li>
+                        <li>下載Google翻譯app備用</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第二天 -->
+        <div id="day2" class="day-card">
+            <div class="day-header">
+                第二天 - Bios之丘探索 & 日落皮划艇體驗
+            </div>
+            <div class="day-content">
+                <div class="activity">
+                    <h3>07:30-08:30 - 飯店早餐</h3>
+                    <p><strong>🍽️ 享受：</strong>Vessel Hotel評價頗高的豐盛早餐，補充體力</p>
+                </div>
+
+                <div class="activity">
+                    <h3>08:30-09:30 - 前往Bios之丘</h3>
+                    <p><strong> 目的地：</strong>BIOS no Oka（沖縄県うるま市石川嘉手苅961-30）</p>
+                    <p><strong>🚗 車程：</strong>從飯店出發約45-55分鐘</p>
+                    <p><strong>💡 路線建議：</strong>走高速公路（沖縄南IC → 沖縄北IC），時間較快且穩定</p>
+                    <div class="transport">
+                        <strong>導航設定：</strong>可輸入電話098-965-8001或Map Code 206 006 508*84
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/VESSEL+HOTEL+CAMPANA+OKINAWA,+沖縄県中頭郡北谷町美浜9-22/BIOS+no+Oka,+沖縄県うるま市石川嘉手苅961-30" class="route-link" target="_blank">從飯店導航至Bios之丘</a>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>09:40-12:30 - 體驗Bios之丘自然生態園</h3>
+                    <div class="location-info" data-location="bios-hill">
+                        <strong>BIOS no Oka（ビオスの丘）</strong><br>
+                        📍 沖縄県うるま市石川嘉手苅961-30<br>
+                        📞 電話：098-965-8001
+                    </div>
+                    <p><strong>🌿 特色：</strong>沖繩著名的亞熱帶森林生態公園，豐富自然景觀</p>
+                    <p><strong>🚤 湖水遊船：</strong>搭乘小船欣賞兩岸亞熱帶植物，有專業導覽（約25分鐘）</p>
+                    <p><strong> 獨木舟體驗：</strong>在安全湖面體驗划獨木舟，感受與自然融為一體</p>
+                    <p><strong>‍♀️ 自然步道：</strong>沿著規劃完善的步道漫步，觀察植物、小動物</p>
+                    <p><strong>🌺 蘭花溫室：</strong>參觀園內蘭花溫室，欣賞各種珍稀蘭花品種</p>
+                    <p><strong>🐐 山羊互動區：</strong>與可愛山羊近距離接觸，適合小朋友餵食互動</p>
+                    <p><strong>👶 親子重點：</strong>空氣清新，體驗沖繩原始自然風貌的絕佳選擇</p>
+                    <p><strong>⏰ 建議停留：</strong>約2.5-3小時</p>
+                    <div class="tips">
+                        <h4>注意事項</h4>
+                        <ul>
+                            <li>準備防蚊用品、舒適步行鞋</li>
+                            <li>注意防曬和補充水分</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>12:30-13:30 - 午餐</h3>
+                    <div class="food-rec">
+                        <strong>選擇1：</strong>Bios之丘園內餐廳 - 沖繩風味料理和輕食，環境優美
+                    </div>
+                    <div class="food-rec">
+                        <strong>選擇2：</strong>海中道路周邊海景餐廳 - 距離約10-15分鐘車程，可欣賞美麗海景
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>13:45-15:30 - 返回飯店稍作休息</h3>
+                    <p><strong> 車程：</strong>從Bios之丘返回Vessel Hotel約45-55分鐘</p>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/BIOS+no+Oka,+沖縄県うるま市石川嘉手苅961-30/VESSEL+HOTEL+CAMPANA+OKINAWA,+沖縄県中頭郡北谷町美浜9-22" class="route-link" target="_blank">從Bios之丘導航回飯店</a>
+                    </div>
+                    <p><strong>💆‍♀️ 建議：</strong>稍作休息，補充體力，準備下午皮划艇活動</p>
+                    <p><strong> 準備：</strong>更換適合水上活動的服裝，準備防曬用品</p>
+                </div>
+
+                <div class="activity">
+                    <h3>17:45-20:00 - 沖繩日落皮划艇之旅</h3>
+                    <div class="location-info" data-location="kadena-port">
+                        <strong>嘉手納漁港（Kadena Fishing Port）</strong><br>
+                        📍 沖縄県中頭郡嘉手納町
+                    </div>
+                    <p><strong>📍 集合地點：</strong>嘉手納漁港（Kadena Fishing Port）</p>
+                    <p><strong>🚗 車程：</strong>從Vessel Hotel約15-20分鐘</p>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/VESSEL+HOTEL+CAMPANA+OKINAWA,+沖縄県中頭郡北谷町美浜9-22/26.3567,127.7456" class="route-link" target="_blank">從飯店導航至嘉手納漁港</a>
+                    </div>
+                    <p><strong> 活動特色：</strong>黃昏時分體驗皮划艇，欣賞沖繩西海岸絕美夕陽</p>
+                    <p><strong>‍🏫 專業指導：</strong>教練提供安全說明和划船技巧，適合初學者</p>
+                    <p><strong> 海洋生態：</strong>在平靜海面觀察海洋生物，體驗與大自然親密接觸</p>
+                    <p><strong>📸 攝影留念：</strong>教練協助拍攝美麗夕陽皮划艇照片</p>
+                    <div class="tips">
+                        <h4>活動注意事項</h4>
+                        <ul>
+                            <li>請於17:30前抵達集合地點</li>
+                            <li>建議穿著快乾服裝或泳裝，攜帶換洗衣物</li>
+                            <li>活動包含救生衣等安全裝備</li>
+                            <li>自備防曬用品、飲用水、防水袋</li>
+                            <li>如遇惡劣天氣可能取消或延期</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>20:30-22:00 - 晚餐：とんかつ太郎北谷店</h3>
+                    <div class="location-info" data-location="tonkatsu-taro">
+                        <strong>とんかつ太郎北谷店</strong><br>
+                        📍 沖縄県中頭郡北谷町北谷2丁目7-1
+                    </div>
+                    <p><strong>🚗 車程：</strong>從嘉手納漁港約10-15分鐘</p>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/26.3567,127.7456/とんかつ太郎北谷店,+沖縄県中頭郡北谷町北谷2丁目7-1" class="route-link" target="_blank">從嘉手納漁港導航至とんかつ太郎</a>
+                    </div>
+                    <p><strong>🍽️ 特色：</strong>當地人推薦的日式炸豬排專賣店，份量足，高麗菜絲和白飯可續</p>
+                    <p><strong>💡 小貼士：</strong>皮划艇活動後享用熱騰騰炸豬排是完美搭配，尖峰時間可能需排隊</p>
+                </div>
+
+                <div class="tips">
+                    <h4>第二天小貼士</h4>
+                    <ul>
+                        <li>今日活動豐富，建議早點休息</li>
+                        <li>若體力允許，可散步逛夜晚的美國村</li>
+                        <li>美國村夜晚燈飾很漂亮，適合拍照</li>
+                        <li>準備防水相機或防水袋保護手機</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第三天 -->
+        <div id="day3" class="day-card">
+            <div class="day-header">
+                第三天 - 名護動植物 & 鳳梨樂園一日遊
+            </div>
+            <div class="day-content">
+                <div class="activity">
+                    <h3>07:30-08:30 - 飯店早餐</h3>
+                    <p><strong>🍽️ 享受：</strong>Vessel Hotel的豐盛早餐</p>
+                </div>
+
+                <div class="activity">
+                    <h3>08:30-09:40 - 前往名護自然動植物公園</h3>
+                    <p><strong>📍 目的地：</strong>ネオパークオキナワ（沖縄県名護市名護4607-41）</p>
+                    <p><strong>🚗 車程：</strong>從飯店出發約60-70分鐘</p>
+                    <p><strong> 路線建議：</strong>走高速公路（沖縄南IC → 許田IC）</p>
+                    <div class="transport">
+                        <strong>導航設定：</strong>可輸入電話0980-52-6348或Map Code 206 689 608*74
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/VESSEL+HOTEL+CAMPANA+OKINAWA,+沖縄県中頭郡北谷町美浜9-22/ネオパークオキナワ,+沖縄県名護市名護4607-41" class="route-link" target="_blank">從飯店導航至名護動植物公園</a>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>10:00-12:30 - 探索名護動植物公園</h3>
+                    <div class="location-info" data-location="neo-park">
+                        <strong>ネオパークオキナワ（Neo Park Okinawa）</strong><br>
+                        📍 沖縄県名護市名護4607-41<br>
+                        📞 電話：0980-52-6348
+                    </div>
+                    <p><strong>🦩 園區特色：</strong>以鳥類和自由放養動物為主，接近自然的生態環境</p>
+                    <p><strong> 沖縄軽便鉄道：</strong>復古小火車繞行園區外圍（約20分鐘，需另購票）</p>
+                    <p><strong>🦢 紅鶴湖周邊：</strong>主要步行區域，近距離觀察各種鳥類、水豚、象龜</p>
+                    <p><strong> 互動廣場：</strong>可購買飼料餵食小動物（天竺鼠、兔子）或與狗狗互動</p>
+                    <p><strong> 親子重點：</strong>互動性高，適合喜歡動物的小朋友，部分動物自由走動</p>
+                    <p><strong>⏰ 建議停留：</strong>約2-2.5小時</p>
+                    <div class="tips">
+                        <h4>注意事項</h4>
+                        <ul>
+                            <li>園區範圍大，大部分戶外，注意防曬補水</li>
+                            <li>穿著輕便好走的鞋子</li>
+                            <li>與動物保持適當距離</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>12:30-13:45 - 午餐：百年古家大家（Ufuya）</h3>
+                    <div class="location-info" data-location="ufuya-restaurant">
+                        <strong>百年古家大家（Ufuya）</strong><br>
+                        📍 沖縄県名護市中山90<br>
+                        📞 電話：0980-53-0280
+                    </div>
+                    <p><strong>🚗 車程：</strong>從Neo Park約10-15分鐘</p>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/百年古家大家（Ufuya）,+沖縄県名護市中山90/名護鳳梨園,+沖縄県名護市為又1195" class="route-link" target="_blank">從Ufuya導航至名護鳳梨園</a>
+                    </div>
+                    <p><strong>🏛️ 特色：</strong>在移築的百年琉球古宅中享用著名Agu豬料理</p>
+                    <p><strong>🍽️ 推薦：</strong>Agu豬涮涮鍋或沖繩麵套餐</p>
+                    <p><strong>🌸 環境：</strong>用餐環境極具特色，庭園造景優美</p>
+                    <div class="tips">
+                        <h4>預約建議</h4>
+                        <ul>
+                            <li>超人氣餐廳，強烈建議事先預約</li>
+                            <li>電話：0980-53-0280</li>
+                            <li>否則可能需要長時間排隊</li>
+                        </ul>
+                    </div>
+                    <div class="transport">
+                        <strong>導航設定：</strong>可輸入電話0980-53-0280或Map Code 206 745 056*80
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>14:00-15:30 - 名護鳳梨園</h3>
+                    <div class="location-info" data-location="pineapple-park">
+                        <strong>名護鳳梨園（Nago Pineapple Park）</strong><br>
+                        📍 沖縄県名護市為又1195<br>
+                        📞 電話：0980-53-3659
+                    </div>
+                    <p><strong>🚗 車程：</strong>從大家Ufuya約10-15分鐘</p>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/百年古家大家（Ufuya）,+沖縄県名護市中山90/名護鳳梨園,+沖縄県名護市為又1195" class="route-link" target="_blank">從Ufuya導航至名護鳳梨園</a>
+                    </div>
+                    <p><strong>🍍 特色：</strong>搭乘自動駕駛的鳳梨造型遊園車參觀鳳梨田和熱帶植物園</p>
+                    <p><strong>🍰 試吃試飲：</strong>園區內有多種鳳梨相關產品（鳳梨酒、果汁、蛋糕、點心）</p>
+                    <p><strong>🍦 必吃：</strong>鳳梨冰淇淋！</p>
+                    <p><strong>👶 親子重點：</strong>適合親子輕鬆遊覽，後半段主要是購物區</p>
+                    <p><strong>⏰ 建議停留：</strong>約1-1.5小時</p>
+                    <div class="transport">
+                        <strong>導航設定：</strong>可輸入電話0980-53-3659或Map Code 206 716 467*33
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>15:45-17:00 - 返回飯店休息</h3>
+                    <p><strong>🚗 車程：</strong>從名護鳳梨園返回Vessel Hotel約60-70分鐘</p>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/名護鳳梨園,+沖縄県名護市為又1195/VESSEL+HOTEL+CAMPANA+OKINAWA,+沖縄県中頭郡北谷町美浜9-22" class="route-link" target="_blank">從名護鳳梨園導航回飯店</a>
+                    </div>
+                    <p><strong>💡 路線建議：</strong>走高速公路（許田IC → 沖縄南IC）</p>
+                    <p><strong>💆‍♀️ 建議：</strong>返回飯店稍作休息，準備晚餐</p>
+                </div>
+
+                <div class="activity">
+                    <h3>18:00-19:30 - 晚餐：琉球焼肉Gyu-Samurai（牛侍）</h3>
+                    <div class="location-info" data-location="gyu-samurai">
+                        <strong>琉球焼肉Gyu-Samurai（牛侍）</strong><br>
+                        📍 沖縄県国頭郡恩納村名嘉真２２４７−１
+                    </div>
+                    <p><strong>🚗 車程：</strong>從Vessel Hotel約30-40分鐘</p>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/VESSEL+HOTEL+CAMPANA+OKINAWA,+沖縄県中頭郡北谷町美浜9-22/琉球焼肉Gyu-Samurai（牛侍）,+沖縄県国頭郡恩納村名嘉真２２４７−１" class="route-link" target="_blank">從飯店導航至Gyu-Samurai</a>
+                    </div>
+                    <p><strong>🥩 特色：</strong>品嚐高品質和牛燒肉，用餐環境精緻</p>
+                    <p><strong>🍽️ 選擇：</strong>提供多種套餐與單點選擇</p>
+                    <div class="tips">
+                        <h4>預約確認</h4>
+                        <ul>
+                            <li>此餐廳座位已預約完成</li>
+                            <li>請準時抵達享用美味和牛燒肉體驗</li>
+                            <li>注意掌握出發時間以準時抵達</li>
+                        </ul>
+                    </div>
+                    <div class="transport">
+                        <strong>Map Code：</strong>206 387 307*05
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>19:30之後 - 美國村散步或回飯店休息</h3>
+                    <p><strong>🌃 選擇1：</strong>美國村散步，逛特色小店，欣賞夜景</p>
+                    <p><strong>🏨 選擇2：</strong>早點回飯店，讓孩子休息，或使用飯店設施</p>
+                </div>
+
+                <div class="tips">
+                    <h4>第三天小貼士</h4>
+                    <ul>
+                        <li>今天主要在名護地區，車程較長請注意休息</li>
+                        <li>大家Ufuya和燒肉餐廳都需預約</li>
+                        <li>鳳梨園可以購買伴手禮</li>
+                        <li>美國村夜景很美，適合散步拍照</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第四天 -->
+        <div id="day4" class="day-card">
+            <div class="day-header">
+                第四天 - 公園放電 → 購物 → 還車 → 入住那霸
+            </div>
+            <div class="day-content">
+                <div class="activity">
+                    <h3>07:30-08:30 - 飯店早餐 & 整理行李</h3>
+                    <p><strong>🍽️ 享受：</strong>在Vessel Hotel的最後一頓早餐</p>
+                    <p><strong>🧳 準備：</strong>將所有行李整理好，準備退房</p>
+                </div>
+
+                <div class="activity">
+                    <h3>09:00 - 辦理退房（Check-out）</h3>
+                    <p><strong>🏨 流程：</strong>前往櫃檯辦理退房手續，將行李搬上車</p>
+                </div>
+
+                <div class="activity">
+                    <h3>09:30-11:30 - 県営中城公園大放電</h3>
+                    <div class="location-info" data-location="nakagusuku-park">
+                        <strong>県営中城公園</strong><br>
+                        📍 沖縄県北中城村荻道平田原370-2<br>
+                        📞 電話：098-863-5090
+                    </div>
+                    <p><strong>🚗 車程：</strong>從Vessel Hotel約20-30分鐘</p>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/VESSEL+HOTEL+CAMPANA+OKINAWA,+沖縄県中頭郡北谷町美浜9-22/県営中城公園,+沖縄県北中城村荻道平田原370-2" class="route-link" target="_blank">從飯店導航至中城公園</a>
+                    </div>
+                    <p><strong>🎯 特色：</strong>號稱沖繩最大規模的公園，設有巨型溜滑梯、大型攀爬設施</p>
+                    <p><strong> 巨型滾輪溜滑梯：</strong>長約100公尺的超長溜滑梯，公園招牌設施</p>
+                    <p><strong>🧗‍♀️ 大型複合式遊具：</strong>多種攀爬、平衡、挑戰設施組合</p>
+                    <p><strong>🤸‍♀️ 彈跳設施：</strong>大型蹦蹦床區域</p>
+                    <p><strong>🌱 草地區域：</strong>可奔跑嬉戲，或野餐休憩</p>
+                    <p><strong>👶 親子重點：</strong>非常適合讓孩子消耗體力，免費入場</p>
+                    <p><strong>⏰ 建議停留：</strong>約2小時</p>
+                    <div class="transport">
+                        <strong>導航設定：</strong>可輸入電話098-863-5090或Map Code 33 410 685*17
+                    </div>
+                    <div class="tips">
+                        <h4>注意事項</h4>
+                        <ul>
+                            <li>有停車場、洗手間、飲水機等設施</li>
+                            <li>請注意防曬及補充水分</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>12:00-13:15 - 午餐（AEON Mall Rycom）</h3>
+                    <div class="location-info" data-location="aeon-rycom">
+                        <strong>AEON Mall Okinawa Rycom</strong><br>
+                        📍 沖縄県中頭郡北中城村ライカム1<br>
+                        📞 電話：098-930-1425
+                    </div>
+                    <p><strong>🚗 車程：</strong>從中城公園約15-20分鐘</p>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/県営中城公園,沖縄県北中城村荻道平田原370-2/AEON Mall Okinawa Rycom,沖縄県中頭郡北中城村ライカム1" class="route-link" target="_blank">從中城公園導航至AEON Mall Okinawa Rycom</a>
+                    </div>
+                    <p><strong>🏬 特色：</strong>沖繩最大的購物中心，有大型美食街和眾多獨立餐廳</p>
+                    <p><strong>🍽️ 推薦用餐區域：</strong></p>
+                    <ul>
+                        <li><strong>3F美食街：</strong>多種選擇，價位平實，速度快</li>
+                        <li><strong>各樓層餐廳：</strong>日式、中式、西式、沖繩料理等</li>
+                    </ul>
+                    <div class="transport">
+                        <strong>導航設定：</strong>可輸入電話098-930-1425或Map Code 33 530 406*77
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>13:30-15:30 - AEON Mall Rycom購物</h3>
+                    <p><strong>🛍️ 購物重點：</strong></p>
+                    <ul>
+                        <li><strong>無印良品、UNIQLO：</strong>服飾、生活用品</li>
+                        <li><strong>玩具反斗城：</strong>各種玩具、遊戲</li>
+                        <li><strong>超市（AEON）：</strong>購買伴手禮、零食、日用品</li>
+                        <li><strong>藥妝店：</strong>化妝品、藥品、保健食品</li>
+                        <li><strong>沖繩土產專區：</strong>各種沖繩特色商品</li>
+                    </ul>
+                    <p><strong>💡 建議：</strong>這是行程中最大規模的購物時間，建議列清單並有效率地採購</p>
+                </div>
+
+                <div class="activity">
+                    <h3>15:45-16:30 - 前往那霸飯店Hotel Ocean</h3>
+                    <div class="location-info" data-location="hotel-ocean">
+                        <strong>Hotel Ocean</strong><br>
+                        📍 沖縄県那覇市安里２丁目４−８<br>
+                        📞 電話：098-863-2288
+                    </div>
+                    <p><strong>🚗 車程：</strong>從AEON Mall Rycom約30-50分鐘（視交通狀況）</p>
+                    <p><strong>🏨 Hotel Ocean特色：</strong>以超級豐富的兒童設施和備品聞名，大廳有兒童遊戲區、免費點心飲料吧</p>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/AEON Mall Okinawa Rycom,沖縄県中頭郡北中城村ライカム1/Hotel Ocean,沖縄県那覇市安里２丁目４−８" class="route-link" target="_blank">從AEON Rycom導航至Hotel Ocean</a>
+                    </div>
+                    <div class="transport">
+                        <strong>導航設定：</strong>可輸入電話098-863-2288或Map Code 33 158 413*85
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>16:45-17:45 - 還車@OTS DFS營業所 + 加油</h3>
+                    <div class="location-info" data-location="ots-dfs">
+                        <strong>OTS DFS營業所</strong><br>
+                        📍 沖縄県那覇市おもろまち4-1<br>
+                        📞 電話：098-951-1143
+                    </div>
+                    <p><strong>🚗 車程：</strong>從Hotel Ocean約10-15分鐘</p>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/Hotel Ocean,沖縄県那覇市安里２丁目４−８/OTS DFS營業所,沖縄県那覇市おもろまち4-1" class="route-link" target="_blank">從Hotel Ocean導航至OTS DFS</a>
+                    </div>
+                    <div class="tips">
+                        <h4>還車前務必加滿油！</h4>
+                        <ul>
+                            <li>預留15-20分鐘在還車點附近加油站加滿油（レギュラー Regular）</li>
+                            <li>保留加油收據備查</li>
+                            <li>DFS附近有多家加油站（ENEOS, Cosmo, Idemitsu等）</li>
+                        </ul>
+                    </div>
+                    <p><strong>🔧 還車流程：</strong>依指示將車開到OTS還車區域，工作人員檢查油量、車況，結算ETC費用</p>
+                    <p><strong>⏰ 預留時間：</strong>整個還車過程（含加油）建議預留約45-60分鐘</p>
+                </div>
+
+                <div class="activity">
+                    <h3>17:45-18:15 - 從還車點返回Hotel Ocean & Check-in</h3>
+                    <p><strong>🚗 車程：</strong>從Hotel Ocean約10-15分鐘</p>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/OTS DFS營業所,沖縄県那覇市おもろまち4-1/Hotel Ocean,沖縄県那覇市安里２丁目４−８" class="route-link" target="_blank">從OTS DFS導航回Hotel Ocean</a>
+                    </div>
+                    <p><strong>🏨 Hotel Ocean特色：</strong>以超級豐富的兒童設施和備品聞名，大廳有兒童遊戲區、免費點心飲料吧</p>
+                </div>
+
+                <div class="activity">
+                    <h3>18:30-20:00 - 晚餐（國際通周邊）</h3>
+                    <p><strong>📍 地點：</strong>從Hotel Ocean步行即可抵達國際通主要區域</p>
+                    <div class="food-rec">
+                        <strong>選擇1：</strong>暖暮拉麵那覇牧志店 - 人氣豚骨拉麵（離飯店近，但常排隊）
+                    </div>
+                    <div class="food-rec">
+                        <strong>選擇2：</strong>やっぱりステーキ國際通店 - 平價牛排館
+                    </div>
+                    <div class="food-rec">
+                        <strong>選擇3：</strong>其他沖繩麵店、居酒屋等
+                    </div>
+                </div>
+
+                <div class="tips">
+                    <h4>第四天小貼士</h4>
+                    <ul>
+                        <li>今天移動日較為奔波，可以讓孩子在飯店遊戲區玩耍</li>
+                        <li>國際通晚上依然熱鬧，可稍微逛逛感受氣氛</li>
+                        <li>注意店家關門時間（通常21:00-22:00陸續關閉）</li>
+                        <li>還車前務必檢查是否有遺留物品</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第五天 -->
+        <div id="day5" class="day-card">
+            <div class="day-header">
+                第五天 - 國際通文化美食探索日（步行+單軌）
+            </div>
+            <div class="day-content">
+                <div class="activity">
+                    <h3>08:00-09:00 - 飯店早餐</h3>
+                    <p><strong>🍽️ 享受：</strong>Hotel Ocean著名的親子友善早餐</p>
+                    <p><strong>👶 特色：</strong>據說有兒童專屬自助吧、離乳食品等</p>
+                </div>
+
+                <div class="activity">
+                    <h3>09:30-11:30 - 遊覽國際通 & 第一牧志公設市場</h3>
+                    <p><strong>📍 交通：</strong>全程步行，從Hotel Ocean出發沿國際通往縣廳前方向</p>
+                    <p><strong>🛣️ 國際通：</strong>那霸最主要的觀光購物大道，長約1.6公里，兩旁商店、餐廳、土產店林立</p>
+                    <div class="location-info" data-location="makishi-market">
+                        <strong>第一牧志公設市場</strong><br>
+                        📍 沖縄県那覇市松尾2-10-1
+                    </div>
+                    <p><strong>🏪 第一牧志公設市場：</strong></p>
+                    <ul>
+                        <li><strong>特色：</strong>被稱為「那霸的廚房」</li>
+                        <li><strong>一樓：</strong>販售各種生鮮海產、沖繩特有食材、肉品、漬物等</li>
+                        <li><strong>二樓：</strong>設有食堂</li>
+                        <li><strong>體驗：</strong>感受當地市場活力，看色彩繽紛的魚類和有趣食材</li>
+                    </ul>
+                    <p><strong>🚶‍♀️ 路線：</strong>從國際通轉進市場本通り或平和通り商店街即可找到市場入口</p>
+                    <div class="tips">
+                        <h4>最新狀態注意</h4>
+                        <ul>
+                            <li>原市場已重建完成並於2023年3月重新開幕</li>
+                            <li>請以最新官方資訊為準</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>11:30-13:00 - 午餐（牧志市場或國際通周邊）</h3>
+                    <div class="food-rec">
+                        <strong>推薦選擇1：</strong>市場二樓食堂（推薦體驗）
+                        <ul>
+                            <li>在一樓挑選喜歡的海鮮（夜光貝、龍蝦、生魚片）</li>
+                            <li>拿到二樓食堂，選擇代客料理方式（清蒸、奶油燒、生食等）</li>
+                            <li>推薦食堂：がんじゅう堂、ツバメ食堂等</li>
+                            <li>人多時可能需要等候座位和料理時間</li>
+                        </ul>
+                    </div>
+                    <div class="food-rec">
+                        <strong>推薦選擇2：</strong>國際通周邊餐廳
+                        <ul>
+                            <li><strong>肉屋ししや：</strong>石垣牛/Agu豬漢堡排專賣店</li>
+                            <li><strong>ポーたま牧志市場店：</strong>人氣豬肉蛋飯糰（適合外帶當點心）</li>
+                            <li><strong>Jef Burger：</strong>沖繩限定苦瓜漢堡（在平和通內）</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>13:30-16:30 - 國際通 & 周邊商店街自由探索/購物</h3>
+                    <p><strong>🕐 彈性時間：</strong>約3小時，深入探索國際通及周邊特色街道和商店</p>
+                    <p><strong>🛍️ 建議區域：</strong></p>
+                    <ul>
+                        <li><strong>國際通：</strong>
+                            <ul>
+                                <li>御菓子御殿國際通松尾店：必買紅芋塔伴手禮</li>
+                                <li>塩屋國際通店：各式沖繩鹽製品、鹽味冰淇淋</li>
+                                <li>ドン・キホーテ國際通店：大型藥妝雜貨店，商品齊全</li>
+                            </ul>
+                        </li>
+                        <li><strong>平和通り商店街：</strong>傳統拱廊商店街，較多在地風格小店、服飾、雜貨</li>
+                        <li><strong>市場本通り：</strong>連接市場與國際通，販售乾貨、漬物、紀念品等</li>
+                        <li><strong>浮島通り：</strong>較有文青風格，多特色服飾店、咖啡廳、古著店</li>
+                        <li><strong>壺屋やちむん通り：</strong>陶器街，可欣賞購買琉球陶器（離國際通步行約10-15分鐘）</li>
+                    </ul>
+                    <p><strong>💡 建議：</strong>可依興趣選擇想逛的區域，累了隨時找間咖啡廳休息</p>
+                </div>
+
+                <div class="activity">
+                    <h3>17:00-18:30 - 晚餐：国際通り屋台村</h3>
+                    <div class="location-info" data-location="yatai-mura">
+                        <strong>国際通り屋台村</strong><br>
+                        📍 沖縄県那覇市牧志3丁目11-17
+                    </div>
+                    <p><strong>🚶‍♀️ 交通：</strong>從國際通主要街道步行可達（靠近Hotel Ocean/牧志站一側）</p>
+                    <p><strong>🏮 特色：</strong>集合了約20家小巧的日式攤位，提供沖繩料理、壽司、串燒、拉麵、異國小吃等</p>
+                    <p><strong>🍽️ 用餐方式：</strong>氣氛熱鬧，中間有公共座位區，可一次品嚐多種不同店家料理</p>
+                    <p><strong>👶 親子重點：</strong>適合想嚐鮮或多人分享，座位有限，尖峰時間可能較擁擠</p>
+                    <p><strong>💡 建議：</strong>可先繞一圈看看各家菜單再決定</p>
+                </div>
+
+                <div class="activity">
+                    <h3>19:00 - 步行返回飯店休息</h3>
+                    <p><strong>🚶‍♀️ 路程：</strong>從屋台村回Hotel Ocean約5-10分鐘步行</p>
+                    <p><strong>🧳 建議：</strong>回飯店後可整理今天購買的戰利品，好好休息</p>
+                </div>
+
+                <div class="tips">
+                    <h4>第五天小貼士</h4>
+                    <ul>
+                        <li><strong>步行日提醒：</strong>今天以步行為主，務必穿著極度舒適好走的鞋子！</li>
+                        <li>國際通人潮眾多，請隨時注意孩童安全</li>
+                        <li>尤其在穿越馬路或擁擠區域時要特別小心</li>
+                        <li>可準備小背包放置購買的小物品</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第六天 -->
+        <div id="day6" class="day-card">
+            <div class="day-header">
+                第六天 - 悠閒早午餐 → 機場 → 賦歸
+            </div>
+            <div class="day-content">
+                <div class="activity">
+                    <h3>08:00-09:00 - 飯店早餐 & 最後整理</h3>
+                    <p><strong>🍽️ 把握機會：</strong>最後享用Hotel Ocean的早餐</p>
+                    <p><strong>🧳 完成：</strong>所有行李打包</p>
+                </div>
+
+                <div class="activity">
+                    <h3>09:30 - 辦理退房 & 寄放行李</h3>
+                    <p><strong>🏨 流程：</strong>前往櫃檯辦理退房手續</p>
+                    <p><strong>🧳 寄放：</strong>向飯店櫃檯詢問寄放行李服務（通常免費），告知預計下午回來領取</p>
+                </div>
+
+                <div class="activity">
+                    <h3>10:00-11:30 - 悠閒早午餐/最後巡禮</h3>
+                    <div class="food-rec">
+                        <strong>選擇1：</strong>一蘭拉麵那覇国際通り店
+                        <ul>
+                            <li>地址：沖縄県那覇市牧志1丁目2-24</li>
+                            <li>從Hotel Ocean步行約10-15分鐘</li>
+                            <li>若想念熟悉的味道可選擇，早上時段排隊人潮較少</li>
+                        </ul>
+                    </div>
+                    <div class="food-rec">
+                        <strong>選擇2：</strong>C&C BREAKFAST OKINAWA
+                        <ul>
+                            <li>人氣早午餐店，舒芙蕾鬆餅有名</li>
+                            <li>地址：沖縄県那覇市松尾２丁目９−６（靠近牧志市場）</li>
+                            <li>從Hotel Ocean步行約15-20分鐘</li>
+                            <li>可能需要排隊，建議早點去</li>
+                        </ul>
+                    </div>
+                    <div class="food-rec">
+                        <strong>選擇3：</strong>國際通周邊其他咖啡廳，悠閒地喝杯咖啡，做最後的回味
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>11:30-12:30 - 最後採買 & 領取行李</h3>
+                    <p><strong>🛍️ 最後機會：</strong>在國際通補齊沒買到的伴手禮或紀念品</p>
+                    <p><strong>🧳 領取：</strong>返回Hotel Ocean領取寄放的行李</p>
+                </div>
+
+                <div class="activity">
+                    <h3>12:30-13:00 - 步行前往單軌電車牧志駅</h3>
+                    <p><strong>🚶‍♀️ 路程：</strong>從Hotel Ocean拖著行李步行至牧志站約5-8分鐘</p>
+                    <p><strong>🚇 設施：</strong>牧志站有電梯或手扶梯可搭乘至月台層</p>
+                </div>
+
+                <div class="activity">
+                    <h3>13:00-13:30 - 搭乘單軌電車前往那覇空港駅</h3>
+                    <p><strong>🎫 購票：</strong>在牧志站自動售票機購買前往「那覇空港駅」的單程票（大人¥300）</p>
+                    <p><strong>🚇 搭乘：</strong>搭乘往「那覇空港」方向的列車（終點站）</p>
+                    <p><strong>⏰ 車程：</strong>約16分鐘，列車班次密集，約10分鐘一班</p>
+                </div>
+
+                <div class="activity">
+                    <h3>13:30-18:00 - 那霸機場報到 & 自由活動</h3>
+                    <p><strong>🏢 抵達：</strong>從「那覇空港駅」跟隨指示前往國際線航廈</p>
+                    <p><strong>✈️ 辦理報到：</strong>前往中華航空櫃檯辦理登機手續、托運行李（建議提早辦理）</p>
+                    <p><strong>🛍️ 自由活動：</strong></p>
+                    <ul>
+                        <li><strong>國內線航廈（強烈推薦）：</strong>
+                            <ul>
+                                <li>連結通道可步行抵達，2樓有非常多餐廳和伴手禮商店</li>
+                                <li>必買/吃：Pork Tamago Onigiri機場店、A&W漢堡、Blue Seal冰淇淋</li>
+                                <li>各種沖繩限定土產，可悠閒用餐或做最後購物衝刺</li>
+                            </ul>
+                        </li>
+                        <li><strong>國際線航廈：</strong>商店和餐廳選擇相對較少，出境後的免稅店可購買菸酒、化妝品等</li>
+                    </ul>
+                    <div class="tips">
+                        <h4>時間掌握</h4>
+                        <ul>
+                            <li>回程航班CI123是21:05起飛</li>
+                            <li>建議最晚19:00前完成報到和行李托運</li>
+                            <li>建議最晚19:30-20:00之間通過安檢和證照查驗進入候機室</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <h3>18:00-20:30 - 安檢 & 候機</h3>
+                    <p><strong>🔍 安檢：</strong>返回國際線航廈，通過安全檢查（注意液體、尖銳物品等規定）</p>
+                    <p><strong>🛂 出境：</strong>通過證照查驗（出境審查）</p>
+                    <p><strong>🛍️ 免稅店：</strong>逛逛出境後的免稅店</p>
+                    <p><strong>🚪 候機：</strong>前往指定登機門，休息等待登機廣播</p>
+                </div>
+
+                <div class="activity">
+                    <h3>21:05-21:50 - 搭乘華航CI123返回桃園T2</h3>
+                    <p><strong>✈️ 航班：</strong>CI123 | 21:05 OKA → 21:50 TPE（台灣時間）</p>
+                    <p><strong>⏰ 飛行時間：</strong>約1小時45分鐘</p>
+                    <p><strong>💭 回味：</strong>好好休息，回味沖繩之旅！</p>
+                </div>
+
+                <div class="activity">
+                    <h3>21:50-23:00 - 抵達桃機 & 入境</h3>
+                    <p><strong>🛬 抵達：</strong>桃園機場第二航廈</p>
+                    <p><strong>🛂 入境：</strong>辦理入境手續（可使用自動通關）</p>
+                    <p><strong>🧳 領取行李：</strong>前往行李轉盤領取托運行李</p>
+                </div>
+
+                <div class="activity">
+                    <h3>23:00-00:00 - 返回竹北</h3>
+                    <p><strong>🚗 交通：</strong>取車或搭乘預約的機場接送返回竹北</p>
+                    <p><strong>⏰ 車程：</strong>約45-60分鐘</p>
+                    <p><strong>🏠 結束：</strong>旅途順利結束！歡迎回家！好好休息！</p>
+                </div>
+
+                <div class="tips">
+                    <h4>第六天小貼士</h4>
+                    <ul>
+                        <li>機場免稅店價格不一定最便宜，建議先在市區比價</li>
+                        <li>液體類商品要注意攜帶規定</li>
+                        <li>預留足夠時間給小朋友在機場休息</li>
+                        <li>記得確認班機時間，避免匆忙</li>
+                        <li>國內線航廈的選擇比國際線豐富很多</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 美食推薦 -->
+        <div id="food" class="day-card">
+            <div class="day-header">
+                🍽️ 沖繩必吃美食清單
+            </div>
+            <div class="day-content">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3 style="color: #e74c3c;">🍜 沖繩麵類</h3>
+                        <ul>
+                            <li><strong>沖繩麵 (Okinawa Soba)：</strong>各家湯頭、麵條、滷肉不同</li>
+                            <li><strong>Soki Soba：</strong>加入軟骨排骨的沖繩麵</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3 style="color: #3498db;">🥩 肉類料理</h3>
+                        <ul>
+                            <li><strong>Agu豬料理：</strong>涮涮鍋、薑汁燒肉、炸豬排</li>
+                            <li><strong>石垣牛/沖繩和牛：</strong>燒肉、牛排、漢堡排</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3 style="color: #27ae60;">🌮 特色料理</h3>
+                        <ul>
+                            <li><strong>Taco Rice：</strong>墨西哥Taco肉醬+生菜起司鋪在飯上</li>
+                            <li><strong>苦瓜炒什錦 (Goya Chanpuru)：</strong>沖繩家常菜代表</li>
+                            <li><strong>沖繩天婦羅：</strong>較厚實的麵衣</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3 style="color: #f39c12;">🍦 甜點飲品</h3>
+                        <ul>
+                            <li><strong>Blue Seal冰淇淋：</strong>紅芋、鹽金楚糕、甘蔗等限定口味</li>
+                            <li><strong>サーターアンダギー：</strong>沖繩式開口笑甜甜圈</li>
+                            <li><strong>Orion啤酒：</strong>沖繩在地啤酒</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3 style="color: #9b59b6;">🐟 海鮮類</h3>
+                        <ul>
+                            <li><strong>海葡萄 (Umibudo)：</strong>口感獨特的綠色藻類</li>
+                            <li><strong>新鮮海產：</strong>牧志市場魚生、奶油烤貝類</li>
+                            <li><strong>海蘊 (Mozuku)：</strong>醋漬或天婦羅</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3 style="color: #e67e22;">🥘 其他特色</h3>
+                        <ul>
+                            <li><strong>花生豆腐 (Jimami Tofu)：</strong>口感像麻糬的豆腐</li>
+                            <li><strong>島豆腐 (Shima Dofu)：</strong>質地較硬的豆腐</li>
+                            <li><strong>Pork Tamago Onigiri：</strong>豬肉蛋飯糰，現做美味</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 購物推薦 -->
+        <div id="shopping" class="day-card">
+            <div class="day-header">
+                🛍️ 沖繩推薦購物清單
+            </div>
+            <div class="day-content">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3 style="color: #e74c3c;">🍠 經典伴手禮</h3>
+                        <ul>
+                            <li><strong>紅芋相關點心：</strong>御菓子御殿的紅芋塔最經典</li>
+                            <li><strong>金楚糕 (Chinsuko)：</strong>傳統琉球餅乾，多種口味</li>
+                            <li><strong>沖繩黑糖：</strong>黑糖塊、黑糖漿、黑糖花生</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3 style="color: #3498db;">🧂 調味料類</h3>
+                        <ul>
+                            <li><strong>雪塩/各式海鹽：</strong>口味眾多，適合料理或直接品嚐</li>
+                            <li><strong>泡盛：</strong>沖繩特產蒸餾酒，可找「古酒」</li>
+                            <li><strong>沖繩限定調味料：</strong>泡麵、調味料</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3 style="color: #27ae60;">🦁 紀念品類</h3>
+                        <ul>
+                            <li><strong>風獅爺擺飾：</strong>成雙成對，造型各異</li>
+                            <li><strong>琉球玻璃製品：</strong>杯子、盤子等，色彩鮮豔</li>
+                            <li><strong>特色T-shirt：</strong>國際通小店或浮島通文創商品</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3 style="color: #f39c12;">🍿 零食飲料</h3>
+                        <ul>
+                            <li><strong>沖繩限定零食：</strong>Calbee Jagarico沖繩限定口味</li>
+                            <li><strong>Orion啤酒：</strong>各種包裝規格</li>
+                            <li><strong>沖繩限定飲料：</strong>各種特色口味</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3 style="color: #9b59b6;">💄 藥妝日用品</h3>
+                        <ul>
+                            <li><strong>藥妝/日用品：</strong>國際通Don Quijote或AEON超市</li>
+                            <li><strong>海島風情服飾：</strong>花襯衫、洋裝、海灘巾</li>
+                            <li><strong>美麗海水族館周邊：</strong>鯨鯊、魟魚玩偶</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 預算總結 -->
+        <div id="budget" class="budget-summary">
+            <h2 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">💰 預算總結（以一家四口為例）</h2>
+
+            <div class="budget-item">
+                <span><strong>🏨 住宿費用（5晚）</strong></span>
+                <span>¥50,000 - ¥100,000</span>
+            </div>
+
+            <div class="budget-item">
+                <span><strong>🚗 租車費用（4天）</strong></span>
+                <span>¥20,000 - ¥30,000</span>
+            </div>
+
+            <div class="budget-item">
+                <span><strong>⛽ 油費 + 高速公路費</strong></span>
+                <span>¥8,000 - ¥12,000</span>
+            </div>
+
+            <div class="budget-item">
+                <span><strong>🎫 景點門票費用</strong></span>
+                <span>¥15,000 - ¥25,000</span>
+            </div>
+
+            <div class="budget-item">
+                <span><strong>🍽️ 餐飲費用</strong></span>
+                <span>¥40,000 - ¥60,000</span>
+            </div>
+
+            <div class="budget-item">
+                <span><strong>🛍️ 購物 + 伴手禮</strong></span>
+                <span>¥30,000 - ¥50,000</span>
+            </div>
+
+            <div class="budget-item">
+                <span><strong>🎈 其他雜費</strong></span>
+                <span>¥15,000 - ¥20,000</span>
+            </div>
+
+            <div class="budget-item total">
+                <span><strong>總計（不含機票）</strong></span>
+                <span><strong>¥178,000 - ¥297,000</strong></span>
+            </div>
+
+            <div style="margin-top: 15px; padding: 15px; background: #e8f5e8; border-radius: 8px;">
+                <p><strong>💡 省錢小貼士：</strong></p>
+                <ul style="margin: 10px 0; padding-left: 20px;">
+                    <li>選擇有廚房的住宿，可以自己準備簡單餐點</li>
+                    <li>便利商店的食物便宜又好吃</li>
+                    <li>很多海灘和公園都是免費的</li>
+                    <li>提前預訂住宿和租車會有優惠</li>
+                    <li>AEON Mall和Outlet購物比較划算</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 實用資訊 -->
+        <div id="tips" class="highlight">
+            <h2 style="text-align: center; margin-bottom: 20px;">📋 實用資訊 & 注意事項</h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                <div>
+                    <h3 style="color: #e74c3c;">🧳 行前準備清單</h3>
+                    <ul>
+                        <li><strong>重要文件：</strong>護照（有效期6個月以上）、駕照正本+日文譯本</li>
+                        <li><strong>機票住宿：</strong>電子機票、預訂確認信</li>
+                        <li><strong>保險：</strong>旅遊平安險、不便險、醫療險</li>
+                        <li><strong>金錢：</strong>日圓現金、信用卡、備用卡</li>
+                        <li><strong>網路：</strong>WiFi分享器/SIM卡/國際漫遊</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="color: #3498db;">📱 實用APP</h3>
+                    <ul>
+                        <li><strong>Google Maps：</strong>離線地圖必備</li>
+                        <li><strong>Google翻譯：</strong>拍照翻譯很實用</li>
+                        <li><strong>Yahoo天氣：</strong>日本當地天氣預報</li>
+                        <li><strong>Tabelog：</strong>美食評價查詢</li>
+                        <li><strong>匯率換算APP：</strong>購物時方便計算</li>
+                        <li><strong>沖繩觀光APP：</strong>官方旅遊資訊</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="color: #27ae60;">🌡️ 6月中旬天氣資訊</h3>
+                    <ul>
+                        <li><strong>天氣型態：</strong>梅雨季結束、夏季開始的過渡期</li>
+                        <li><strong>氣溫：</strong>白天高溫可達30°C以上，炎熱潮濕</li>
+                        <li><strong>降雨：</strong>摺疊傘必備，輕便雨衣也很好用</li>
+                        <li><strong>防曬：</strong>高係數防曬乳、寬邊帽、太陽眼鏡</li>
+                        <li><strong>防蚊：</strong>傍晚或公園綠地可能有蚊蟲</li>
+                        <li><strong>穿著：</strong>輕便、透氣、吸汗的夏季衣物</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="color: #f39c12;">🚗 租車自駕注意事項</h3>
+                    <ul>
+                        <li><strong>必備文件：</strong>台灣駕照正本+日文譯本（兩者缺一不可）</li>
+                        <li><strong>右駕左行：</strong>轉彎時左轉小彎，右轉大彎</li>
+                        <li><strong>操作差異：</strong>雨刷與方向燈控制桿位置相反</li>
+                        <li><strong>速度限制：</strong>高速公路80km/h，一般道路40-60km/h</li>
+                        <li><strong>兒童座椅：</strong>6歲以下強制使用安全座椅</li>
+                        <li><strong>還車加油：</strong>還車前必須將油箱加滿</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="color: #9b59b6;">🚇 那霸市區交通</h3>
+                    <ul>
+                        <li><strong>Yui Rail單軌電車：</strong>連接機場與市區主要地點</li>
+                        <li><strong>票價：</strong>單程票或一日券¥800/二日券¥1400</li>
+                        <li><strong>步行：</strong>國際通及周邊非常適合步行探索</li>
+                        <li><strong>計程車：</strong>起跳價約¥560-600，適合短程移動</li>
+                        <li><strong>付款：</strong>現金為主，部分車輛可刷卡</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="color: #e67e22;">💰 貨幣與支付</h3>
+                    <ul>
+                        <li><strong>貨幣：</strong>使用日圓（JPY）</li>
+                        <li><strong>現金：</strong>建議現金與信用卡搭配使用</li>
+                        <li><strong>小店：</strong>市場、小店、計程車可能仍需現金</li>
+                        <li><strong>電壓：</strong>100V，插座為兩孔扁平型（與台灣相同）</li>
+                        <li><strong>語言：</strong>主要觀光區英文尚可，準備翻譯App很有幫助</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 雨備方案 -->
+        <div class="day-card">
+            <div class="day-header">
+                ☔ 雨備地點推薦：沖繩Round 1 Stadium
+            </div>
+            <div class="day-content">
+                <div class="activity">
+                    <h3>室內娛樂複合設施：Round 1 Stadium那覇店</h3>
+                    <p><strong>📍 地址：</strong>沖縄県那覇市金城5丁目10-2</p>
+                    <p><strong>🚗 交通：</strong>從那霸市區開車約15-20分鐘，有免費停車場</p>
+                    <p><strong>🎳 保齡球：</strong>多條球道，適合全家同樂，有兒童專用輕量球和護欄</p>
+                    <p><strong>🎤 卡拉OK：</strong>提供日文、中文、英文歌曲，包廂環境舒適</p>
+                    <p><strong>🎮 電子遊戲區：</strong>大型電玩、娃娃機、射擊遊戲等，選擇豐富</p>
+                    <p><strong>🎱 撞球/桌球：</strong>多張撞球桌和桌球桌，適合親子互動</p>
+                    <p><strong>🥽 體感遊戲：</strong>VR體驗、體感運動遊戲等新穎設施</p>
+                    <p><strong>🍽️ 餐飲服務：</strong>設有餐廳和小食部，解決用餐需求</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3 style="color: #3498db;">營業資訊</h3>
+                        <ul>
+                            <li><strong>營業時間：</strong>通常為10:00-24:00（依設施而異）</li>
+                            <li><strong>收費方式：</strong>採用會員卡制度，可按時間或項目計費</li>
+                            <li><strong>適用年齡：</strong>全年齡適用，特別適合親子家庭</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3 style="color: #e74c3c;">雨天替代建議</h3>
+                        <ul>
+                            <li>當戶外行程因天氣取消時的絕佳室內娛樂選擇</li>
+                            <li>建議安排2-4小時的停留時間</li>
+                            <li>可根據家庭成員喜好選擇不同娛樂項目</li>
+                            <li>特別推薦雨天時取代公園或海灘活動</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tips">
+                    <h4>其他雨備選項</h4>
+                    <ul>
+                        <li><strong>AEON Mall Okinawa Rycom：</strong>沖繩最大購物中心，有兒童遊戲區</li>
+                        <li><strong>沖繩美麗海水族館：</strong>雖然部分區域室外，但主要展館都在室內</li>
+                        <li><strong>那霸市立壺屋焼物博物館：</strong>了解沖繩陶瓷文化，適合文化體驗</li>
+                        <li><strong>國際通商店街：</strong>室內購物和用餐，感受當地文化</li>
+                        <li><strong>Blue Seal ICE PARK：</strong>冰淇淋DIY體驗，約45-60分鐘親子活動</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 打包建議清單 -->
+        <div class="day-card">
+            <div class="day-header">
+                🧳 打包建議清單
+            </div>
+            <div class="day-content">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3 style="color: #e74c3c;">📄 重要文件類</h3>
+                        <ul>
+                            <li>護照（正本+影本/照片備份）</li>
+                            <li>駕照正本+日文譯本（若有租車）</li>
+                            <li>機票/電子機票</li>
+                            <li>住宿/租車/活動預訂確認信</li>
+                            <li>旅遊保險證明</li>
+                            <li>信用卡、日幣現金</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3 style="color: #3498db;">👕 衣物鞋襪類</h3>
+                        <ul>
+                            <li>夏季輕便透氣衣物（T-shirt、短褲、洋裝）</li>
+                            <li>薄外套或罩衫（防曬/室內冷氣）</li>
+                            <li>泳衣、泳褲、泳帽（若要去海灘/泳池）</li>
+                            <li>內衣褲、襪子</li>
+                            <li>超級舒適好走的鞋子（運動鞋/休閒鞋）</li>
+                            <li>涼鞋或拖鞋（海灘/飯店內）</li>
+                            <li>睡衣</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3 style="color: #27ae60;">🧴 盥洗與防護用品</h3>
+                        <ul>
+                            <li>個人盥洗用品（牙刷/牙膏，部分飯店可能不提供）</li>
+                            <li>保養品、化妝品</li>
+                            <li>高係數防曬乳（臉部/身體，建議防水型）</li>
+                            <li>曬後蘆薈膠/保濕乳液</li>
+                            <li>帽子、太陽眼鏡</li>
+                            <li>雨具（摺疊傘/輕便雨衣）</li>
+                            <li>防蚊液/止癢藥膏</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3 style="color: #f39c12;">👶 兒童專用物品</h3>
+                        <ul>
+                            <li>足夠的換洗衣物、尿布（若需要）</li>
+                            <li>輕便推車或揹巾</li>
+                            <li>兒童餐具、圍兜、水壺</li>
+                            <li>常備藥品（退燒、止瀉、過敏、外傷藥膏、OK繃）</li>
+                            <li>體溫計</li>
+                            <li>安撫玩具、繪本</li>
+                            <li>小零食、米餅</li>
+                            <li>兒童泳具、玩沙工具（可當地買）</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3 style="color: #9b59b6;">📱 電子產品與其他</h3>
+                        <ul>
+                            <li>手機、充電器、行動電源（不可托運）</li>
+                            <li>相機、記憶卡、充電器</li>
+                            <li>日本上網工具（WiFi分享器/SIM卡）</li>
+                            <li>轉換插頭（若有需要，但通常台日插座相容）</li>
+                            <li>購物袋/環保袋</li>
+                            <li>塑膠袋/夾鏈袋（裝濕衣物/分裝小物）</li>
+                            <li>個人藥品</li>
+                            <li>小毛巾/濕紙巾</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 緊急聯絡資訊 -->
+        <div id="emergency" class="emergency-contact">
+            <h3>🆘 緊急聯絡資訊</h3>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h4 style="color: #d32f2f; margin-bottom: 10px;">🚨 緊急電話</h4>
+                    <p><strong>警察：</strong>110</p>
+                    <p><strong>消防/救護車：</strong>119</p>
+                    <p><strong>海上保安廳：</strong>118</p>
+                </div>
+                <div class="contact-item">
+                    <h4 style="color: #d32f2f; margin-bottom: 10px;">🏛️ 駐日代表處</h4>
+                    <p><strong>台北駐日經濟文化代表處那霸分處</strong></p>
+                    <p>📞 電話：098-862-7008</p>
+                    <p>📍 地址：沖繩縣那霸市久茂地3-15-9</p>
+                    <p>🕐 服務時間：平日09:00-12:00, 13:30-17:30</p>
+                </div>
+                <div class="contact-item">
+                    <h4 style="color: #d32f2f; margin-bottom: 10px;">ℹ️ 觀光諮詢</h4>
+                    <p><strong>沖繩觀光諮詢熱線</strong></p>
+                    <p>📞 電話：098-840-1000</p>
+                    <p>🗣️ 語言：有中文服務</p>
+                    <p>🕐 服務時間：08:00-20:00</p>
+                </div>
+                <div class="contact-item">
+                    <h4 style="color: #d32f2f; margin-bottom: 10px;">🏥 醫療機構</h4>
+                    <p><strong>沖繩縣立中部醫院</strong></p>
+                    <p>📞 電話：098-973-4111</p>
+                    <p>📍 地址：沖繩縣うるま市宮里281</p>
+                    <p>💡 24小時急診服務</p>
+                </div>
+                <div class="contact-item">
+                    <h4 style="color: #d32f2f; margin-bottom: 10px;">🚗 租車公司</h4>
+                    <p><strong>OTS租車</strong></p>
+                    <p>📞 客服：0120-34-3732</p>
+                    <p>📞 臨空豐崎營業所：098-856-8877</p>
+                    <p>📞 DFS營業所：098-951-1143</p>
+                </div>
+                <div class="contact-item">
+                    <h4 style="color: #d32f2f; margin-bottom: 10px;">✈️ 航空公司</h4>
+                    <p><strong>中華航空</strong></p>
+                    <p>📞 台灣客服：02-412-9000</p>
+                    <p>📞 日本客服：03-5520-0333</p>
+                    <p>🌐 網站：www.china-airlines.com</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.8); border-radius: 8px;">
+                <h4 style="color: #d32f2f; margin-bottom: 10px;">📱 重要提醒</h4>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>建議將重要電話號碼存入手機通訊錄</li>
+                    <li>隨身攜帶護照影本和緊急聯絡人資訊</li>
+                    <li>購買旅遊保險並記下保險公司24小時服務電話</li>
+                    <li>如遇緊急狀況，先確保人身安全，再聯絡相關單位</li>
+                    <li>重要文件建議拍照備份存在雲端</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 30px 0; padding: 20px; background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%); border-radius: 15px;">
+            <h2 style="color: #2c3e50; margin-bottom: 15px;">🌺 祝您沖繩之旅愉快！</h2>
+            <p style="font-size: 1.1em; color: #34495e;">
+                希望這份詳細的行程規劃能讓您的沖繩親子旅遊更加順利愉快！<br>
+                記得隨時關注天氣變化，保持彈性調整行程，最重要的是享受與家人共度的美好時光！
+            </p>
+            <p style="margin-top: 15px; font-style: italic; color: #7f8c8d;">
+                ✨ 安全第一，開心遊玩，滿載而歸！✨
+            </p>
+        </div>
+
+        <!-- 回到頂部按鈕 -->
+        <a href="#" class="back-to-top">↑</a>
+
+    </div>
+
+    <script>
+        // 地圖連結數據
+        const mapData = {
+            // 第一天
+            'ots-toyosaki': {
+                name: 'OTS臨空豐崎營業所',
+                coords: '26.15894487,127.65429233', // Updated coordinate
+                address: '沖縄県豊見城市豊崎3-37', // Updated address
+                phone: '098-856-8877'
+            },
+            'iias-toyosaki': {
+                name: 'iias沖繩豐崎購物中心',
+                coords: '26.15745547,127.65040349', // Updated coordinate
+                address: '沖縄県豊見城市豊崎3-35',
+                phone: '098-840-6900'
+            },
+            'dmm-aquarium': {
+                name: 'DMM Kariyushi水族館',
+                coords: '26.15745547,127.65040349', // Updated coordinate (same as iias)
+                address: '沖縄県豊見城市豊崎3-35（iias購物中心內）',
+                phone: '098-840-6333'
+            },
+            'vessel-hotel': {
+                name: 'VESSEL HOTEL CAMPANA OKINAWA',
+                coords: '26.3158,127.7598',
+                address: '沖縄県中頭郡北谷町美浜9-22',
+                phone: '098-936-1188'
+            },
+            'american-village': {
+                name: '美國村 Depot Island',
+                coords: '26.3155,127.7595',
+                address: '沖縄県中頭郡北谷町美浜9-21',
+                phone: '098-926-5678'
+            },
+            // 第二天
+            'bios-hill': {
+                name: 'BIOS no Oka（ビオスの丘）',
+                coords: '26.4389,127.8167',
+                address: '沖縄県うるま市石川嘉手苅961-30',
+                phone: '098-965-8001'
+            },
+            'kadena-port': {
+                name: '嘉手納漁港',
+                coords: '26.3567,127.7456',
+                address: '沖縄県中頭郡嘉手納町',
+                phone: ''
+            },
+            // 第三天
+            'neo-park': {
+                name: 'ネオパークオキナワ',
+                coords: '26.6089,127.9756',
+                address: '沖縄県名護市名護4607-41',
+                phone: '0980-52-6348'
+            },
+            'ufuya-restaurant': {
+                name: '百年古家大家（Ufuya）',
+                coords: '26.6156,127.9445',
+                address: '沖縄県名護市中山90',
+                phone: '0980-53-0280'
+            },
+            'pineapple-park': {
+                name: '名護鳳梨園',
+                coords: '26.6234,127.9389',
+                address: '沖縄県名護市為又1195',
+                phone: '0980-53-3659'
+            },
+            'gyu-samurai': {
+                name: '琉球焼肉Gyu-Samurai（牛侍）',
+                coords: '26.5123,127.8567',
+                address: '沖縄県国頭郡恩納村名嘉真２２４７−１',
+                phone: ''
+            },
+            // 第四天
+            'nakagusuku-park': {
+                name: '県営中城公園',
+                coords: '26.2789,127.7956',
+                address: '沖縄県北中城村荻道平田原370-2',
+                phone: '098-863-5090'
+            },
+            'aeon-rycom': {
+                name: 'AEON Mall Okinawa Rycom',
+                coords: '26.3345,127.8023',
+                address: '沖縄県中頭郡北中城村ライカム1',
+                phone: '098-930-1425'
+            },
+            'hotel-ocean': {
+                name: 'Hotel Ocean',
+                coords: '26.2156,127.6789',
+                address: '沖縄県那覇市安里２丁目４−８',
+                phone: '098-863-2288'
+            },
+            'ots-dfs': {
+                name: 'OTS DFS營業所',
+                coords: '26.2234,127.6923',
+                address: '沖縄県那覇市おもろまち4-1',
+                phone: '098-951-1143'
+            },
+            // 第五天
+            'makishi-market': {
+                name: '第一牧志公設市場',
+                coords: '26.2145,127.6756',
+                address: '沖縄県那覇市松尾2-10-1',
+                phone: ''
+            },
+            'yatai-mura': {
+                name: '国際通り屋台村',
+                coords: '26.2167,127.6789',
+                address: '沖縄県那覇市牧志3丁目11-17',
+                phone: ''
+            },
+            // 第六天
+            'naha-airport': {
+                name: '那霸機場',
+                coords: '26.1958,127.6458',
+                address: '沖縄県那覇市鏡水150',
+                phone: '098-840-1179'
+            },
+            'tonkatsu-taro': { // Added from former specificLocations
+                name: 'とんかつ太郎北谷店',
+                coords: '26.3234,127.7567',
+                address: '沖縄県中頭郡北谷町北谷2丁目7-1',
+                phone: ''
+            }
+        };
+
+        // 動態添加地圖連結的函數
+        function addMapLinks() {
+            Object.keys(mapData).forEach(key => {
+                const data = mapData[key];
+                // Only target elements with a data-location attribute
+                const elements = document.querySelectorAll(`[data-location="${key}"]`);
+                elements.forEach(element => {
+                    // More specific check for an existing Google Maps query link
+                    if (!element.querySelector('a.map-link[href*="maps.google.com/?q="]')) {
+                        const mapLinkContainer = document.createElement('div');
+                        // Add margin for consistency if part of location-info or similar structured parent
+                        mapLinkContainer.style.marginTop = '10px';
+                        mapLinkContainer.innerHTML = `
+                            <a href="https://maps.google.com/?q=${encodeURIComponent(data.name + ', ' + data.address)}" class="map-link" target="_blank">在Google地圖中查看</a>
+                        `;
+                        element.appendChild(mapLinkContainer);
+                    }
+                });
+            });
+        }
+
+        // 平滑滾動效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 回到頂部按鈕顯示/隱藏
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+
+        // 回到頂部功能
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // 頁面載入完成後執行
+        document.addEventListener('DOMContentLoaded', function() {
+            addMapLinks();
+            // addRouteLinks(); // Will not add links anymore, but structure kept for potential future use.
+
+            //延遲執行，確保所有內容都已載入 -- This is likely redundant if DOMContentLoaded is used.
+            // setTimeout(() => {
+            //     addMapLinks();
+            //     addRouteLinks();
+            // }, 1000);
+        });
+    </script>
+</body>
+</html>
