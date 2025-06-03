@@ -258,6 +258,76 @@
             color: white;
         }
 
+        /* 手機版導覽列優化 */
+        @media (max-width: 768px) {
+            .quick-nav {
+                padding: 12px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+            }
+
+            .quick-nav h2 {
+                font-size: 1.1em !important;
+                margin-bottom: 10px !important;
+            }
+
+            .nav-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 6px;
+                margin-top: 8px;
+            }
+
+            .nav-item {
+                padding: 6px 4px;
+                font-size: 0.7em;
+                border-radius: 6px;
+                line-height: 1.2;
+                min-height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /* 導覽列文字過長時的處理 */
+            .nav-item {
+                word-break: keep-all;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            /* 或者使用水平滾動的替代方案 */
+            .nav-grid-horizontal {
+                display: flex;
+                overflow-x: auto;
+                gap: 8px;
+                padding-bottom: 5px;
+                scrollbar-width: thin;
+            }
+
+            .nav-grid-horizontal::-webkit-scrollbar {
+                height: 4px;
+            }
+
+            .nav-grid-horizontal::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                border-radius: 10px;
+            }
+
+            .nav-grid-horizontal::-webkit-scrollbar-thumb {
+                background: #667eea;
+                border-radius: 10px;
+            }
+
+            .nav-item-horizontal {
+                flex: 0 0 auto;
+                min-width: 80px;
+                padding: 6px 8px;
+                font-size: 0.7em;
+                white-space: nowrap;
+            }
+        }
+
         .overview-card {
             background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
             border-radius: 15px;
